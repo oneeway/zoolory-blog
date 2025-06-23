@@ -1,0 +1,4 @@
+baseURL = "https://blog.zoolory.de/"
+title = "Zoolory Blog"
+theme = "PaperMod"
+languageCode = "de-de"
