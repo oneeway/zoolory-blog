@@ -1,4 +1,5 @@
 baseURL = "https://blog.zoolory.de/"
+languageCode = "de-de"
 title = "Zoolory Blog"
 theme = "PaperMod"
-languageCode = "de-de"
+publishDir = "public"
