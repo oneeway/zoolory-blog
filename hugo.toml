@@ -3,3 +3,28 @@ languageCode = "de-de"
 title = "Zoolory Blog"
 theme = "PaperMod"
 publishDir = "public"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  disableCategories = false
+  disableTags = false
+  ShowReadingTime = true
+  enableGitInfo = true
+  author = "Dein Name"
+  description = "Hier kommt deine Blogbeschreibung rein für SEO"
+  logo = "/images/logo.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Start"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "impressum"
+    name = "Impressum"
+    url = "/impressum/"
+    weight = 10
