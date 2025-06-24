@@ -21,6 +21,8 @@ relativeURLs = false
 # Pagination für bessere UX
 [pagination]
   pagerSize = 12
+  paginatePath = "Seite"
+
 
 # SEO & Performance Markup
 [markup]
@@ -126,6 +128,7 @@ relativeURLs = false
   # Performance
   assets.disableHLJS = true
   assets.disableFingerprinting = true
+  assets.customCSS = ["css/custom.css"]
   
   # Favicon (wichtig für Branding)
   assets.favicon = "/favicon.ico"
@@ -169,12 +172,6 @@ relativeURLs = false
     hiddenInList = false
     hiddenInSingle = false
   
-  # Edit Page (für GitHub Integration)
-  [params.editPost]
-    URL = "https://github.com/deinusername/zoolory-blog/tree/main/content"
-    Text = "Verbesserung vorschlagen"
-    appendFilePath = true
-
 # Erweiterte Menü-Struktur
 [menu]
   [[menu.main]]
@@ -239,8 +236,6 @@ relativeURLs = false
     simple = true
   [privacy.twitter]
     disable = false
-    enableDNT = true
-    simple = true
   [privacy.vimeo]
     disable = false
     enableDNT = true
@@ -249,3 +244,21 @@ relativeURLs = false
     disable = false
     privacyEnhanced = true
 
+
+# Related Content für bessere UX
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "tags"
+    weight = 60
+  [[related.indices]]
+    name = "date"
+    weight = 10

@@ -1,0 +1,188 @@
+
+
+
+
+
+
+.infobox {
+    border: 2px solid #667eea;
+    background-color: #e0e7ff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+  
+  .affiliate-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .affiliate-link:hover {
+    box-shadow: 0 8px 20px rgba(255,107,107,0.5);
+  }
+  .warning-box {
+    border-left: 5px solid #e94e4e;
+    background-color: #ffe5e5;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    color: #a80000;
+    font-weight: 600;
+  }
+  .cta-box {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+  }
+  .product-box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    background-color: #fafafa;
+  }
+  
+  .product-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .product-desc {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+  }
+  .img-frame {
+    max-width: 100%;
+    border: 5px solid #667eea;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.5);
+    margin: 1.5rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .affiliatebtn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white !important;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .affiliatebtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255,107,107,0.6);
+  }
+  
+  .trennlinie {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    margin: 2rem 0;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list-group {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+  }
+  
+  .list-group li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    color: #333;
+  }
+  
+  .list-group li::before {
+    content: "✓"; /* Häkchen als Symbol */
+    position: absolute;
+    left: 0;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 1.2rem;
+    top: 0;
+  }
+  
+  
+  .steps {
+    counter-reset: step-counter;
+    margin: 1rem 0;
+    padding-left: 0;
+  }
+  
+  .steps li {
+    list-style: none;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2.8rem;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
+  .steps li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 6px rgba(102,126,234,0.5);
+  }
+  .box-with-title {
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: #858688;
+    box-shadow: 0 3px 8px rgba(74, 144, 226, 0.15);
+  }
+  
+  .box-with-title h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-weight: 700;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 0.3rem;
+  }
+  .spacer {
+    height: 2rem; /* Abstandshöhe, anpassen */
+    width: 100%;
+  }
+  
