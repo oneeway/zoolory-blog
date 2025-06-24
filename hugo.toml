@@ -9,8 +9,8 @@ publishDir = "public"
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
-canonifyURLs = true
-relativeURLs = false
+# canonifyURLs = true
+# relativeURLs = false
 
 # Sitemap Generation (Critical für SEO)
 [sitemap]
