@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Produkttests on Zoolory Blog - Haustier Ratgeber &amp; Produkttests</title><link>http://localhost:1313/categories/produkttests/</link><description>Recent content in Produkttests on Zoolory Blog - Haustier Ratgeber &amp; Produkttests</description><image><title>Zoolory Blog - Haustier Ratgeber &amp; Produkttests</title><url>http://localhost:1313/images/zoolory-og-image.jpg</url><link>http://localhost:1313/images/zoolory-og-image.jpg</link></image><generator>Hugo -- 0.147.8</generator><language>de-DE</language><lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/produkttests/index.xml" rel="self" type="application/rss+xml"/><item><title>Top 5 Hundespielzeuge 2025</title><link>http://localhost:1313/posts/katzenspielzeug-top5-copy/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/katzenspielzeug-top5-copy/</guid><description>&lt;p>Hier sind unsere &lt;strong>Top 5 Spielzeuge für Hunde&lt;/strong>.&lt;/p>
-&lt;p>Erster Absatz&lt;/p>
-&lt;a href="" target="_blank" rel="nofollow noopener" class="affiliate-link">
-Zum Angebot
-&lt;/a>
-&lt;p>Nächster Abschnitt&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Produkttests on Zoolory Blog - Haustier Ratgeber &amp; Produkttests</title><link>http://localhost:1313/categories/produkttests/</link><description>Recent content in Produkttests on Zoolory Blog - Haustier Ratgeber &amp; Produkttests</description><image><title>Zoolory Blog - Haustier Ratgeber &amp; Produkttests</title><url>http://localhost:1313/images/zoolory-og-image.jpg</url><link>http://localhost:1313/images/zoolory-og-image.jpg</link></image><generator>Hugo -- 0.147.8</generator><language>de-DE</language><lastBuildDate>Tue, 24 Jun 2025 06:05:26 +0200</lastBuildDate><atom:link href="http://localhost:1313/categories/produkttests/index.xml" rel="self" type="application/rss+xml"/><item><title>Top 5 Hundespielzeuge 2025</title><link>http://localhost:1313/posts/katzenspielzeug-top5-copy/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/katzenspielzeug-top5-copy/</guid><description>&lt;!--
+Hier sind unsere **Top 5 Spielzeuge für Hunde**.
 &lt;ul class="list-group">
 &lt;ul>
 &lt;li>Punkt 1: Hochwertiges Material&lt;/li>
@@ -22,10 +18,34 @@ Zum Angebot
 &lt;h3>Wichtiger Hinweis&lt;/h3>
 Bitte immer die Anleitung vor dem Gebrauch lesen.
 &lt;/div>
-&lt;p>Text oben&lt;/p>
+Text oben
 &lt;div class="spacer">&lt;/div>
-&lt;p>Text unten mit mehr Luft dazwischen.&lt;/p>
+Text unten mit mehr Luft dazwischen.
 &lt;div class="infobox" style="border:1px solid #667eea; background:#f0f4ff; padding:1rem; border-radius:8px; margin:1rem 0;">
 Spielzeug Nummer 1: Besonders robust und beliebt.
 &lt;/div>
-&lt;p>Hier ein tolles Bild:&lt;/p></description></item></channel></rss>
+Hier ein tolles Bild:
+![Robustes Hundespielzeug](/images/hundespielzeug.jpg)
+Kaufen kannst du es hier:
+&lt;a href="https://amazon.de/hundespielzeug123" target="_blank" rel="nofollow noopener" class="affiliate-link">
+Zum Angebot auf Amazon
+&lt;/a>
+&lt;div class="warning-box">
+&lt;strong>Achtung:&lt;/strong>
+Dieses Produkt hat eine besondere Vorsichtsmaßnahme.
+&lt;/div>
+&lt;div class="cta-box">
+Jetzt Newsletter abonnieren und keine Produkttests mehr verpassen!
+[Hier klicken](https://zoolory.de/newsletter)
+&lt;/div>
+&lt;div class="product-box">
+&lt;img src="http://localhost:1313/images/hundespielzeug.jpg" alt="Robustes Hundespielzeug" class="product-image" />
+&lt;div class="product-desc">
+Dieses Spielzeug ist besonders langlebig und perfekt für aktive Hunde.
+&lt;/div>
+&lt;/div>
+&lt;img src="http://localhost:1313/images/hund-spielzeug.jpg" alt="Spielzeug für Hunde" class="img-frame" />
+&lt;a href="https://www.amazon.de/dp/B08XYZ123" class="btn-affiliate" target="_blank" rel="noopener noreferrer nofollow">
+Jetzt auf Amazon kaufen
+&lt;/a>
+--></description></item></channel></rss>
