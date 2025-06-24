@@ -1,32 +1,43 @@
 name: Deploy Hugo Site
+
 on:
   push:
     branches:
       - main
+  workflow_dispatch:  # Ermöglicht manuellen Trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Neueste Version
         with:
           submodules: true
+          fetch-depth: 0  # Holt komplette Git-Historie
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3  # Neueste Version
         with:
           hugo-version: '0.147.9'
+          extended: true  # Falls du Extended Hugo brauchst
 
       - name: Build
         run: hugo --minify --config config.toml --baseURL "https://blog.zoolory.de/" --cleanDestinationDir
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4  # Neueste Version
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          cname: blog.zoolory.de  # Wichtig: diese Zeile hinzufügen
-          force_orphan: true  # Zwingt kompletten Rebuild
+          cname: blog.zoolory.de
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
