@@ -8,11 +8,6 @@ image: "/images/hundespielzeug.jpg"
 
 Hier sind unsere **Top 5 Spielzeuge für Hunde**.
 
-Erster Absatz
-
-{{< trennlinie >}}
-
-Nächster Abschnitt
 
 
 {{< listgroup >}}
