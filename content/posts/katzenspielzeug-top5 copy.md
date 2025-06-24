@@ -5,7 +5,7 @@ categories: ["Hunde", "Produkttests"]
 affiliate_url: "https://amazon.de/hundespielzeug123"
 image: "/images/hundespielzeug.jpg"
 ---
-
+<!-- 
 Hier sind unsere **Top 5 Spielzeuge für Hunde**.
 
 
@@ -62,4 +62,4 @@ Dieses Spielzeug ist besonders langlebig und perfekt für aktive Hunde.
 
 {{< affiliatebtn url="https://www.amazon.de/dp/B08XYZ123" >}}
 Jetzt auf Amazon kaufen
-{{< /affiliatebtn >}}
+{{< /affiliatebtn >}} -->
