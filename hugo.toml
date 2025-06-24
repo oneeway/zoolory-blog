@@ -1,30 +1,262 @@
 baseURL = "https://blog.zoolory.de/"
-languageCode = "de-de"
-title = "Zoolory Blog"
+languageCode = "de-DE"
+defaultContentLanguage = "de"
+title = "Zoolory Blog - Haustier Ratgeber & Produkttests"
 theme = "PaperMod"
 publishDir = "public"
 
+# Performance & SEO Critical
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+canonifyURLs = true
+relativeURLs = false
+
+# Sitemap Generation (Critical für SEO)
+[sitemap]
+  changefreq = "daily"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+# Pagination für bessere UX
 [pagination]
-  pagerSize = 10
+  pagerSize = 12
 
+# SEO & Performance Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = false
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = false
+    style = "github"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+# Output-Formate für SEO
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+# RSS für bessere Indexierung
+[rss]
+  limit = 20
+
+# Minification für Performance
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+    [minify.tdewolff.json]
+      precision = 0
+    [minify.tdewolff.svg]
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+# Taxonomien für bessere Content-Struktur
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# PaperMod Theme Parameter (SEO-optimiert)
 [params]
-  disableCategories = false
-  disableTags = false
+  # Basis SEO
+  env = "production"
+  title = "Zoolory Blog"
+  description = "Ehrliche Produkttests und Ratgeber für Hunde- und Katzenbesitzer. Finde das beste Spielzeug, Futter und Zubehör für dein Haustier."
+  keywords = ["Hunde", "Katzen", "Haustiere", "Produkttest", "Ratgeber", "Tierbedarf", "Hundespielzeug", "Katzenfutter"]
+  author = "Zoolory Team"
+  
+  # Images für Social Media (Open Graph)
+  images = ["/images/zoolory-og-image.jpg"]
+  
+  # Datum & Zeit
+  DateFormat = "2. January 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  
+  # SEO Features
   ShowReadingTime = true
-  enableGitInfo = true
-  author = "Dein Name"
-  description = "Hier kommt deine Blogbeschreibung rein für SEO"
-  logo = "/images/logo.png"
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = true
+  
+  # Performance
+  assets.disableHLJS = true
+  assets.disableFingerprinting = true
+  
+  # Favicon (wichtig für Branding)
+  assets.favicon = "/favicon.ico"
+  assets.favicon16x16 = "/favicon-16x16.png"
+  assets.favicon32x32 = "/favicon-32x32.png"
+  assets.apple_touch_icon = "/apple-touch-icon.png"
+  assets.safari_pinned_tab = "/safari-pinned-tab.svg"
+  
+  # Logo & Branding
+  label.text = "Zoolory Blog"
+  label.icon = "/apple-touch-icon.png"
+  label.iconHeight = 35
+  
+  # Homepage Info (für bessere CTR)
+  [params.homeInfoParams]
+    Title = "🐕 Zoolory Blog - Dein Haustier-Ratgeber 🐱"
+    Content = """
+    **Ehrliche Produkttests** und **Expertentipps** für glückliche Haustiere.
+    
+    ✅ Über 200 getestete Produkte
+    ✅ Wissenschaftlich fundierte Ratgeber  
+    ✅ Unabhängig und transparent
+    
+    *Hinweis: Diese Seite enthält Werbelinks (Affiliate)*
+    """
+  
+  # Social Media Links (für Authority)
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/zoolory"
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/@zoolory"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+  
+  # Cover Image für Homepage
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+  
+  # Edit Page (für GitHub Integration)
+  [params.editPost]
+    URL = "https://github.com/deinusername/zoolory-blog/tree/main/content"
+    Text = "Verbesserung vorschlagen"
+    appendFilePath = true
 
+# Erweiterte Menü-Struktur
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Start"
+    name = "🏠 Start"
     url = "/"
-    weight = 1
-
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "hunde"
+    name = "🐕 Hunde"
+    url = "/categories/hunde/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "katzen"
+    name = "🐱 Katzen"
+    url = "/categories/katzen/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "ratgeber"
+    name = "📚 Ratgeber"
+    url = "/categories/ratgeber/"
+    weight = 40
+  
+  [[menu.main]]
+    identifier = "produkttests"
+    name = "🧪 Tests"
+    url = "/tags/produkttest/"  
+    weight = 50
+  
+  [[menu.main]]
+    identifier = "ueber-uns"
+    name = "ℹ️ Über uns"
+    url = "/about/"
+    weight = 60
+  
   [[menu.main]]
     identifier = "impressum"
     name = "Impressum"
     url = "/impressum/"
-    weight = 10
+    weight = 70
+  
+  [[menu.main]]
+    identifier = "datenschutz"
+    name = "Datenschutz"
+    url = "/datenschutz/"
+    weight = 80
+
+# Privacy & Legal (DSGVO-konform)
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+    anonymizeIP = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+# Security Headers
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
