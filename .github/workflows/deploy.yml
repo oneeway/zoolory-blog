@@ -4,36 +4,27 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Ermöglicht manuellen Trigger
+  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4  # Neueste Version
-        with:
-          submodules: true
-          fetch-depth: 0  # Holt komplette Git-Historie
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3  # Neueste Version
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.147.9'
-          extended: true  # Falls du Extended Hugo brauchst
+          hugo-version: '0.147.0'
+          extended: true
 
       - name: Build
-        run: hugo --minify --config config.toml --baseURL "https://blog.zoolory.de/" --cleanDestinationDir
+        run: hugo --minify
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # Neueste Version
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages
