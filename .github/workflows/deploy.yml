@@ -68,7 +68,7 @@ jobs:
         find static/images -name "*.jpg" -exec jpegoptim --max=85 {} \;
         find static/images -name "*.png" -exec optipng -o7 {} \;
         
-    - name = 📝 Generate Dynamic Content
+    - name: 📝 Generate Dynamic Content
       run: |
         # Generiere aktuelle Datumsangaben für "Letzte Aktualisierung"
         echo "---" > data/build_info.yaml
