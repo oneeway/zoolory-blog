@@ -20,7 +20,7 @@ jobs:
           hugo-version: '0.147.9'
 
       - name: Build
-        run: hugo --minify --config config.toml
+        run: hugo --minify --config config.toml --baseURL "https://blog.zoolory.de/" --cleanDestinationDir
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
